@@ -1,5 +1,5 @@
 // Phone number for WhatsApp and calls
-const phoneNumber = '0503250732';
+const phoneNumber = '00966503250732';
 
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
