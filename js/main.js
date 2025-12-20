@@ -1,5 +1,6 @@
+let ACTIVE_COUNTRY = 'SA'
 // Phone number for WhatsApp and calls
-const phoneNumber = '+966503250732';
+const phoneNumber = '966503250732';
 
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
