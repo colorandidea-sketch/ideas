@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color & Ideas For Advertising - Professional Graphic Design Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for images */
+        .nav-brand img {
+            height: 50px;
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .service-icon img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .feature-icon img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+        
+        .method-icon img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        
+        .cta-card > img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+        
+        .footer-brand img {
+            height: 60px;
+            width: auto;
+            margin-bottom: 15px;
+        }
+        
+        .hero-features .feature-item img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            margin-right: 10px;
+        }
+        
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <!-- Replace with your logo image -->
+                <img src="unnamed.jpg" alt="Color & Ideas Logo">
+                <span>Color & Ideas</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-order-nav" onclick="openWhatsApp(); return false;">Order Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">20+ Years of Creative Excellence</div>
+            <h1 class="hero-title">
+                <span class="color-text">Color & Ideas</span>
+                <span class="subtitle">For Advertising</span>
+            </h1>
+            <p class="hero-description">Transform your brand with stunning graphic designs that captivate and inspire. From banners to business cards, we bring your vision to life.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="openWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                </button>
+                <button class="btn btn-secondary" onclick="makeCall()">
+                    <i class="fas fa-phone"></i> Call Now
+                </button>
+            </div>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <img src="medal.png" alt="Quality">
+                    <span>Professional Quality</span>
+                </div>
+                <div class="feature-item">
+                    <img src="express-delivery.png" alt="Fast Delivery">
+                    <span>Fast Delivery</span>
+                </div>
+                <div class="feature-item">
+                    <img src="design-thinking.png" alt="Creative">
+                    <span>Creative Designs</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Comprehensive graphic design solutions tailored to elevate your brand</p>
+            </div>
+
+            <!-- Banners Service -->
+            <div class="service-block">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <img src="banners.png" alt="Banner Icon">
+                    </div>
+                    <h3>Custom Banners</h3>
+                    <p>Eye-catching banners for events, promotions, and brand visibility. From indoor displays to large outdoor installations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Indoor & Outdoor Banners</li>
+                        <li><i class="fas fa-check"></i> Event & Trade Show Displays</li>
+                        <li><i class="fas fa-check"></i> Promotional Banners</li>
+                        <li><i class="fas fa-check"></i> Custom Sizes Available</li>
+                    </ul>
+                    <button class="btn btn-order" onclick="openWhatsApp('banner')">
+                        <i class="fas fa-shopping-cart"></i> Order Banner Now
+                    </button>
+                </div>
+                <div class="service-slideshow">
+                    <div class="slideshow-container" id="banners-slideshow">
+                        <div class="slide active">
+                            <img src="banner_service.png" alt="Professional Banner Design">
+                        </div>
+                        <div class="slide">
+                            <img src="hero_bg.png" alt="Retail Banner">
+                        </div>
+                        <div class="slide">
+                            <img src="promotional.jpg" alt="Promotional Banner">
+                        </div>
+                        <div class="slide">
+                            <img src="Product-Images-900-×-600-px-2.png" alt="Event Banner">
+                        </div>
+                    </div>
+                    <div class="slideshow-controls">
+                        <button class="prev" onclick="changeSlide('banners-slideshow', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots" id="banners-dots"></div>
+                        <button class="next" onclick="changeSlide('banners-slideshow', 1)"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stickers Service -->
+            <div class="service-block reverse">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <img src="heart.png" alt="Sticker Icon">
+                    </div>
+                    <h3>Custom Stickers</h3>
+                    <p>High-quality stickers for branding, packaging, and promotional campaigns. Durable, vibrant, and made to last.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Die-Cut Stickers</li>
+                        <li><i class="fas fa-check"></i> Vinyl Stickers</li>
+                        <li><i class="fas fa-check"></i> Window & Wall Decals</li>
+                        <li><i class="fas fa-check"></i> Waterproof Options</li>
+                    </ul>
+                    <button class="btn btn-order" onclick="openWhatsApp('sticker')">
+                        <i class="fas fa-shopping-cart"></i> Order Stickers Now
+                    </button>
+                </div>
+                <div class="service-slideshow">
+                    <div class="slideshow-container" id="stickers-slideshow">
+                        <div class="slide active">
+                            <img src="die.png" alt="Custom Sticker Design">
+                        </div>
+                        <div class="slide">
+                            <img src="vinyl-stickers.png" alt="Product Label Sticker">
+                        </div>
+                        <div class="slide">
+                            <img src="window.jfif" alt="Decorative Sticker">
+                        </div>
+                        <div class="slide">
+                            <img src="water.jfif" alt="Fun Sticker Pack">
+                        </div>
+                    </div>
+                    <div class="slideshow-controls">
+                        <button class="prev" onclick="changeSlide('stickers-slideshow', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots" id="stickers-dots"></div>
+                        <button class="next" onclick="changeSlide('stickers-slideshow', 1)"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gifts Service -->
+            <div class="service-block">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <img src="heart.png" alt="Gift Icon">
+                    </div>
+                    <h3>Personalized Gifts</h3>
+                    <p>Make every occasion special with custom-designed gifts. Perfect for corporate events, celebrations, and memorable moments.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Corporate Gifts</li>
+                        <li><i class="fas fa-check"></i> Custom Mugs & T-Shirts</li>
+                        <li><i class="fas fa-check"></i> Photo Frames & Albums</li>
+                        <li><i class="fas fa-check"></i> Personalized Accessories</li>
+                    </ul>
+                    <button class="btn btn-order" onclick="openWhatsApp('gift')">
+                        <i class="fas fa-shopping-cart"></i> Order Gifts Now
+                    </button>
+                </div>
+                <div class="service-slideshow">
+                    <div class="slideshow-container" id="gifts-slideshow">
+                        <div class="slide active">
+                            <img src="arabic.png" alt="Personalized Gift Items">
+                        </div>
+                        <div class="slide">
+                            <img src="t-shirt-printing.png" alt="Custom Mug">
+                        </div>
+                        <div class="slide">
+                            <img src="photo.png" alt="Branded T-Shirt">
+                        </div>
+                        <div class="slide">
+                            <img src="crazzy.jpg" alt="Corporate Gift Set">
+                        </div>
+                    </div>
+                    <div class="slideshow-controls">
+                        <button class="prev" onclick="changeSlide('gifts-slideshow', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots" id="gifts-dots"></div>
+                        <button class="next" onclick="changeSlide('gifts-slideshow', 1)"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Cards Service -->
+            <div class="service-block reverse">
+                <div class="service-content">
+                    <div class="service-icon">
+                        <img src="id-card.png" alt="Business Card Icon">
+                    </div>
+                    <h3>Business Cards</h3>
+                    <p>Make a lasting first impression with professionally designed business cards that reflect your brand identity.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Premium Card Stock</li>
+                        <li><i class="fas fa-check"></i> Modern Designs</li>
+                        <li><i class="fas fa-check"></i> Matte & Glossy Finishes</li>
+                        <li><i class="fas fa-check"></i> Quick Turnaround</li>
+                    </ul>
+                    <button class="btn btn-order" onclick="openWhatsApp('business card')">
+                        <i class="fas fa-shopping-cart"></i> Order Cards Now
+                    </button>
+                </div>
+                <div class="service-slideshow">
+                    <div class="slideshow-container" id="cards-slideshow">
+                        <div class="slide active">
+                            <img src="card.jpg" alt="Professional Business Card">
+                        </div>
+                        <div class="slide">
+                            <img src="Simple-Modern-Business-Card-Template-Design.jpg" alt="Corporate Card Design">
+                        </div>
+                        <div class="slide">
+                            <img src="business-cards-1.jpg" alt="Creative Card Design">
+                        </div>
+                        <div class="slide">
+                            <img src="next-day-business-cards.jpeg" alt="Executive Card Design">
+                        </div>
+                    </div>
+                    <div class="slideshow-controls">
+                        <button class="prev" onclick="changeSlide('cards-slideshow', -1)"><i class="fas fa-chevron-left"></i></button>
+                        <div class="dots" id="cards-dots"></div>
+                        <button class="next" onclick="changeSlide('cards-slideshow', 1)"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Explore our creative works that showcase 20+ years of design excellence</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="banner_service.png" alt="Banner Designs">
+                    <div class="gallery-overlay">
+                        <h4>Banner Designs</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="t-shirt-printing.png" alt="Sticker Collections">
+                    <div class="gallery-overlay">
+                        <h4>Sticker Collections</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="crazzy.jpg" alt="Custom Gifts">
+                    <div class="gallery-overlay">
+                        <h4>Custom Gifts</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="next-day-business-cards.jpeg" alt="Business Cards">
+                    <div class="gallery-overlay">
+                        <h4>Business Cards</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Corporate-brand-identity-templates-kit-Graphics-68966875-1.jpg" alt="Brand Identity">
+                    <div class="gallery-overlay">
+                        <h4>Brand Identity</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="graphic-design-templates-business-marketing-materials.jpg" alt="Marketing Materials">
+                    <div class="gallery-overlay">
+                        <h4>Marketing Materials</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <p class="section-subtitle">Two decades of experience delivering exceptional design solutions</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="reputation.png" alt="Experience">
+                    </div>
+                    <h3>20+ Years Experience</h3>
+                    <p>Two decades of mastering the art of graphic design and advertising</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="fast-delivery.png" alt="Fast">
+                    </div>
+                    <h3>Fast Turnaround</h3>
+                    <p>Quick delivery without compromising on quality and creativity</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="innovation.png" alt="Creative">
+                    </div>
+                    <h3>Creative Excellence</h3>
+                    <p>Innovative designs that make your brand stand out from the crowd</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="reward.png" alt="Pricing">
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Premium quality at prices that fit your budget</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="24-7.png" alt="Support">
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Always here to help with your design needs and questions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="customer-review.png" alt="Satisfaction">
+                    </div>
+                    <h3>Client Satisfaction</h3>
+                    <p>Your happiness is our success - guaranteed satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing</h3>
+                    <p>We're excited to hear about your project and help you achieve your design goals. Reach out to us via WhatsApp or phone call.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <img src="whatsapp.png" alt="WhatsApp">
+                            </div>
+                            <div class="method-info">
+                                <h4>WhatsApp</h4>
+                                <p>Chat with us instantly</p>
+                                <a href="#" onclick="openWhatsApp(); return false;">0503250732</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <img src="telephone.png" alt="Phone">
+                            </div>
+                            <div class="method-info">
+                                <h4>Phone Call</h4>
+                                <p>Speak with our team</p>
+                                <a href="#" onclick="makeCall(); return false;">0503250732</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="business-hours">
+                        <h4><img src="3d-alarm.png" alt="Clock" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;"> Business Hours</h4>
+                        <p>Sunday - Saturday: 9:00 AM - 11:00 PM</p>
+                        <p>Thursday - Friday: 4:00 PM - 10:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <img src="rocket.png" alt="Start Project">
+                        <h3>Ready to Start Your Project?</h3>
+                        <p>Get a free quote and consultation for your design needs</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary" onclick="openWhatsApp()">
+                                <i class="fab fa-whatsapp"></i> Message Us
+                            </button>
+                            <button class="btn btn-secondary" onclick="makeCall()">
+                                <i class="fas fa-phone"></i> Call Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo-white.png" alt="Color & Ideas Logo">
+                    <h3>Color & Ideas For Advertising</h3>
+                    <p>Transforming visions into vibrant realities for over 20 years</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><img src="telephone.png" alt="Phone" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px;"> 0503250732</p>
+                    <p><img src="whatsapp.png" alt="WhatsApp" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 8px;"> WhatsApp Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Color & Ideas For Advertising. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <img src="whatsapp.png" alt="WhatsApp">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
