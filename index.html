@@ -436,7 +436,7 @@
                             <div class="method-info">
                                 <h4>WhatsApp</h4>
                                 <p>Chat with us instantly</p>
-                                <a href="#" onclick="openWhatsApp(); return false;">966503250732</a>
+                                <a href="#" onclick="openWhatsApp(); return false;">0503250732</a>
                             </div>
                         </div>
                         <div class="contact-method">
@@ -446,7 +446,7 @@
                             <div class="method-info">
                                 <h4>Phone Call</h4>
                                 <p>Speak with our team</p>
-                                <a href="#" onclick="makeCall(); return false;">+966503250732</a>
+                                <a href="#" onclick="makeCall(); return false;">0503250732</a>
                             </div>
                         </div>
                     </div>
@@ -474,6 +474,56 @@
             </div>
         </div>
     </section>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch & Payment Options</h2>
+            <p class="section-subtitle">Ready to bring your ideas to life? Contact us or pay securely via bank transfer.</p>
+        </div>
+
+                <!-- ✅ NEW: Payment Methods Section -->
+
+                    <!-- QR Code Card -->
+                    <div class="payment-card" style="background: #f8f9fa; border-radius: 12px; padding: 1.2rem; margin-top: 1rem; border-left: 4px solid #0d6efd;">
+                        <div class="method-icon" style="margin-bottom: 0.5rem;">
+                            <img src="https://img.icons8.com/fluency/48/000000/qr-code.png" alt="QR Code Payment Icon" style="width: 32px; height: 32px;">
+                        </div>
+                        <h4 style="margin: 0.5rem 0; color: #212529;">Scan to Pay (SADAD / Bank Apps)</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 0.8rem; color: #495057;">
+                            Use your bank’s mobile app (e.g., Al Rajhi, SNB, STC Pay) to scan the QR code and pay instantly in SAR.
+                        </p>
+                        <figure style="text-align: center; margin: 1rem 0;">
+                            <img 
+                                id="qrCodeImage"
+                                src="QR CODE.png" 
+                                alt="SADAD QR Code for Color & Ideas – scan to pay in SAR via Saudi bank apps" 
+                                style="width: 180px; height: 180px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; margin: 0 auto;"
+                            >
+                            <figcaption style="font-size: 0.85rem; color: #6c757d; margin-top: 0.5rem;">
+                                Scan with your bank app (e.g., Al Rajhi, SNB, STC Pay) to pay securely
+                            </figcaption>
+                        </figure>
+                        <div style="text-align: center; margin-top: 0.5rem;">
+                            <button 
+                                type="button" 
+                                class="btn btn-secondary" 
+                                style="padding: 0.4rem 1rem; font-size: 0.85rem;"
+                                onclick="document.getElementById('qrCodeImage').src = 'QR CODE.png' + '?t=' + Date.now();"
+                            >
+			<small style="display: block; color: #6c757d; font-style: italic; margin-top: 0.5rem;">
+                            * Please send proof of transfer via WhatsApp to confirm your order.
+                        </small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -512,10 +562,4 @@
 
     <script src="js/main.js"></script>
 </body>
-
 </html>
-
-
-
-
-
